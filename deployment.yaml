@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Amit-deployment
+  labels:
+    app: new
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: new
+  template:
+    metadata:
+      labels:
+        app: new
+    spec:
+      containers:
+      - name: Amit-container
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
