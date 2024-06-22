@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: Amit-container
-        image: nginx:1.14.2
+        image: amitmishra220/image1:latest
         ports:
         - containerPort: 80
